@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+🎥 Luz e Cena
+Landing page de um site focado em cinema, que exibe os filmes em cartaz e que ainda vão estrear permitindo selecionar localidade, buscar filmes pelo título, se inscrever para receber informações e muito mais.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📝 Sobre o Projeto
+A página possui um cabeçalho, um banner, uma lista de filmes, uma seção de newsletter e um rodapé. Os filmes são retornados de uma API's local usando o JSON server. Possui a funcionalidade de filtrar os filmes no campo de busca por título.
 
-Currently, two official plugins are available:
+Tela desktop Tela desktop
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Técnicas e tecnologias utilizadas
+As técnicas e tecnologias utilizadas pra isso são:
 
-## React Compiler
+React: principal biblioteca para construção da interface
+Typescript: para adicionar tipagem estática na aplicação
+Figma: Protótipo de design da página
+JSON server: para simular uma api local
+classnames: para lidar com classes CSS e estilização dinâmica
+react-icons: biblioteca de ícones do React
+CSS modules: para escrever css no React
+📁 Acesso ao projeto
+Você pode acessar o código fonte do projeto inicial ou baixá-lo. Se você quiser acessar o figma do projeto, só clicar neste link.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+💻 Como usar
+☁️Clonar o repositório:
+Para usar a aplicação, clone o repositório em seu ambiente local, você pode fazer isso executando o seguinte comando no terminal: git clone https://github.com/GGasparotto-code/Luz-e-Cena.git;
+⬇️Fazendo o download do repositório:
+Clique no botão "Code" neste repositório e faça o download;
+Salve o arquivo ZIP em seu computador e descompacte-o;
+Abra a pasta descompactada no VS Code. Para isso, siga os passos abaixo:
+File > Open Folder (ou uma opção similar).
+Procure o local onde o projeto foi salvo e selecione a pasta (se o projeto foi baixado como um arquivo ZIP, será necessário extraí-lo antes).
+Clique em OK.
+▶️ Executar o projeto
+Para rodar o projeto, será necessário executar os seguintes comandos:
 
-## Expanding the ESLint configuration
+Instalação das Dependências: Primeiro, você precisa instalar todas as dependências do projeto. Abra o terminal na pasta raiz do projeto e execute:
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Executar o Backend (JSON Server): O projeto utiliza o json-server para simular uma API REST. Se você ainda não o tem instalado, execute o comando abaixo globalmente:
+npm install -g json-server
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Em seguida, inicie o servidor na porta 3001 para que o front-end possa se conectar. Mantenha este terminal aberto enquanto estiver usando a aplicação.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+json-server --watch db.json --port 3001
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Executar o Frontend (React com Vite) Abra um novo terminal na pasta raiz do projeto. Agora, inicie a aplicação React:
+npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A aplicação será iniciada e você poderá acessá-la em seu navegador através do endereço http://localhost:5173 (ou a porta que o Vite indicar).
