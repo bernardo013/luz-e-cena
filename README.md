@@ -6,9 +6,15 @@ A página possui um cabeçalho, um banner, uma lista de filmes, uma seção de n
 
 ## Técnicas e tecnologias utilizadas
 React: principal biblioteca para construção da interface
+
 Typescript: para adicionar tipagem estática na aplicação
+
 Figma: Protótipo de design da página
+
 JSON server: para simular uma api local
+
 classnames: para lidar com classes CSS e estilização dinâmica
+
 react-icons: biblioteca de ícones do React
+
 CSS modules: para escrever css no React
