@@ -1,8 +1,12 @@
+import Banner from "./components/banner"
+import Link from "./components/link"
 
 function App() {
   return (
-    <h1>primeira interação</h1>
+  <>
+      <Banner src="../banner.png" alt="banner"/>
+      <Link href="/" target="_blank">Link</Link>
+  </>
   )
 }
-
 export default App
