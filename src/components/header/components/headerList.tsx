@@ -1,12 +1,7 @@
-import React, { type ReactNode } from 'react'
-
-type headerProps = {
-  children: ReactNode
-}
-// tipar com props seria igual tipar desta forma React.HTMLElementAtributs<HTMLULelement> 
-function HeaderList( {children}: headerProps ){
+import styles from '../header.module.css'
+function HeaderList( {children}: React.HTMLAttributes<HTMLUListElement> ){
   return (
-    <ul>{children}</ul>
+    <ul className={styles.cabecalho} >{children}</ul>
   )
 }
 
