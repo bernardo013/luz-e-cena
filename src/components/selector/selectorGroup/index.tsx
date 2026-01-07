@@ -1,4 +1,3 @@
-import React, { type ReactNode } from 'react'
 import styles from './selectGroup.module.css'
 
 
