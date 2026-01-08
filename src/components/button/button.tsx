@@ -2,11 +2,11 @@ import React from "react";
 import classNames from 'classnames'
 import styles from './button.module.css'
 
-type buttonType = {
+type ButtonType = {
   variant: "default" | "icon" 
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
-const Button = ({children, variant = "default", ...rest}: buttonType) => {
+const Button = ({children, variant = "default", ...rest}: ButtonType) => {
 const classMap = {
   default: styles.default,
   icon: styles.icon
