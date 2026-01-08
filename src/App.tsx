@@ -1,14 +1,14 @@
 import Banner from "./components/banner"
 import Link from "./components/link"
 import Button from "./components/button/button"
-import HeaderList from "./components/header/components/headerList"
+import Header from "./components/header/header"
 
 
 function App() {
   return (
   <>
+  <Header />  
       <Banner src="../banner.png" alt="banner"/>
-      <Link href="/" target="_blank">Link</Link>
       <Button variant="default">Button</Button>
   </>
   )
