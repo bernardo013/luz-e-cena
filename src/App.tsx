@@ -1,5 +1,4 @@
 import Banner from "./components/banner"
-import Link from "./components/link"
 import Button from "./components/button/button"
 import Header from "./components/header/header"
 
