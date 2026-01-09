@@ -1,20 +1,34 @@
 # 🪓 Luz e Cena
-Landing page de um site focado em cinema, que exibe os filmes em cartaz e que ainda vão estrear permitindo selecionar localidade, buscar filmes pelo título, se inscrever para receber informações e muito mais.
 
-# Sobre o Projeto
-A página possui um cabeçalho, um banner, uma lista de filmes, uma seção de newsletter e um rodapé. Os filmes são retornados de uma API's local usando o JSON server. Possui a funcionalidade de filtrar os filmes no campo de busca por título.
+Landing page moderna e responsiva de um site focado em cinema, que exibe os filmes em cartaz e permite aos usuários explorar informações sobre os filmes disponíveis, buscar por título e filtrar por diferentes critérios.
 
-## Técnicas e tecnologias utilizadas
-React: principal biblioteca para construção da interface
+## 📋 Sobre o Projeto
 
-Typescript: para adicionar tipagem estática na aplicação
+O **Luz e Cena** é uma aplicação web desenvolvida em React que simula uma plataforma de informações sobre filmes em cartaz. A página apresenta uma interface intuitiva, com foco na experiência do usuário, exibindo cards de filmes com informações detalhadas como título, categoria (2D/3D), classificação indicativa, gênero e duração.
 
-Figma: Protótipo de design da página
+## 🛠️ Tecnologias Utilizadas
 
-JSON server: para simular uma api local
+### Core
 
-classnames: para lidar com classes CSS e estilização dinâmica
+- **React** `^19.2.0` - Biblioteca principal para construção da interface
+- **TypeScript** - Tipagem estática para maior segurança e produtividade no desenvolvimento
+- **Vite** `^7.2.4` - Build tool moderna e rápida para desenvolvimento frontend
 
-react-icons: biblioteca de ícones do React
+### Estilização
 
-CSS modules: para escrever css no React
+- **CSS Modules** - Escopo local para estilos CSS, evitando conflitos de nomes
+- **CSS Variables** - Sistema de design tokens para cores, espaçamentos e tipografia
+
+### Bibliotecas Auxiliares
+
+- **classnames** `^2.5.1` - Utilidade para gerenciar classes CSS de forma dinâmica
+- **react-icons** `^5.5.0` - Biblioteca de ícones para React
+
+### Ferramentas de Desenvolvimento
+
+- **ESLint** `^9.39.1` - Linter para manter a qualidade do código
+- **TypeScript ESLint** `^8.46.4` - Regras específicas do TypeScript para ESLint
+- **@vitejs/plugin-react** `^5.1.1` - Plugin do Vite para suporte ao React
+
+A aplicação estará disponível em `https://luz-e-cena-delta-beryl.vercel.app/`.
+
