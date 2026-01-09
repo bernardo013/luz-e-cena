@@ -30,5 +30,5 @@ O **Luz e Cena** é uma aplicação web desenvolvida em React que simula uma pla
 - **TypeScript ESLint** `^8.46.4` - Regras específicas do TypeScript para ESLint
 - **@vitejs/plugin-react** `^5.1.1` - Plugin do Vite para suporte ao React
 
-A aplicação estará disponível em `https://luz-e-cena-delta-beryl.vercel.app/`.
+A aplicação estará disponível em [`https://luz-e-cena-delta-beryl.vercel.app/`](https://luz-e-cena-delta-beryl.vercel.app/).
 
