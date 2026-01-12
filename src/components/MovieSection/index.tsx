@@ -22,6 +22,7 @@ const MovieSection = () => {
                    </Button>
                 </Fieldset> 
                 <h1 className={styles.titulo}>Em Cartaz</h1>
+                {isLoading && <p>Carregando Filmes</p>}
                 <MovieList movies={movies}></MovieList>
             </section>
         </main>
